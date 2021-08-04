@@ -1,0 +1,15 @@
+C:\Users\bojc_tq19\source\repos\SalesWpf\SalesWpf\bin\Debug\SalesWpf.exe.config
+C:\Users\bojc_tq19\source\repos\SalesWpf\SalesWpf\bin\Debug\SalesWpf.exe
+C:\Users\bojc_tq19\source\repos\SalesWpf\SalesWpf\bin\Debug\SalesWpf.pdb
+C:\Users\bojc_tq19\source\repos\SalesWpf\SalesWpf\obj\Debug\SalesWpf.csprojAssemblyReference.cache
+C:\Users\bojc_tq19\source\repos\SalesWpf\SalesWpf\obj\Debug\MainWindow.g.cs
+C:\Users\bojc_tq19\source\repos\SalesWpf\SalesWpf\obj\Debug\App.g.cs
+C:\Users\bojc_tq19\source\repos\SalesWpf\SalesWpf\obj\Debug\SalesWpf_MarkupCompile.cache
+C:\Users\bojc_tq19\source\repos\SalesWpf\SalesWpf\obj\Debug\SalesWpf_MarkupCompile.lref
+C:\Users\bojc_tq19\source\repos\SalesWpf\SalesWpf\obj\Debug\MainWindow.baml
+C:\Users\bojc_tq19\source\repos\SalesWpf\SalesWpf\obj\Debug\SalesWpf.g.resources
+C:\Users\bojc_tq19\source\repos\SalesWpf\SalesWpf\obj\Debug\SalesWpf.Properties.Resources.resources
+C:\Users\bojc_tq19\source\repos\SalesWpf\SalesWpf\obj\Debug\SalesWpf.csproj.GenerateResource.cache
+C:\Users\bojc_tq19\source\repos\SalesWpf\SalesWpf\obj\Debug\SalesWpf.csproj.CoreCompileInputs.cache
+C:\Users\bojc_tq19\source\repos\SalesWpf\SalesWpf\obj\Debug\SalesWpf.exe
+C:\Users\bojc_tq19\source\repos\SalesWpf\SalesWpf\obj\Debug\SalesWpf.pdb
