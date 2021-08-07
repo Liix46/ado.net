@@ -26,5 +26,10 @@ namespace WpfAppNetCore.Models
 
         public int? SpecialistsId { get; set; }
         public virtual Specialists Specialists { get; set; }
+
+        public static int CountProp()
+        {
+            return 4;
+        }
     }
 }

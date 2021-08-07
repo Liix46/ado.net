@@ -23,5 +23,10 @@ namespace WpfAppNetCore.Models
 
         public int? GroupsId { get; set; }
         public virtual Groups Groups { get; set; }
+
+        public static int CountProp()
+        {
+            return 3;
+        }
     }
 }

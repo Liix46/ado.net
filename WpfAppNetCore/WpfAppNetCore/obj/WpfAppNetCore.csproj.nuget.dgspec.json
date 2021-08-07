@@ -1,20 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Alex\\source\\repos\\WpfAppNetCore\\WpfAppNetCore\\WpfAppNetCore.csproj": {}
+    "C:\\Users\\bojc_tq19\\Desktop\\Новая папка\\ado.net\\WpfAppNetCore\\WpfAppNetCore\\WpfAppNetCore.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Alex\\source\\repos\\WpfAppNetCore\\WpfAppNetCore\\WpfAppNetCore.csproj": {
+    "C:\\Users\\bojc_tq19\\Desktop\\Новая папка\\ado.net\\WpfAppNetCore\\WpfAppNetCore\\WpfAppNetCore.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Alex\\source\\repos\\WpfAppNetCore\\WpfAppNetCore\\WpfAppNetCore.csproj",
+        "projectUniqueName": "C:\\Users\\bojc_tq19\\Desktop\\Новая папка\\ado.net\\WpfAppNetCore\\WpfAppNetCore\\WpfAppNetCore.csproj",
         "projectName": "WpfAppNetCore",
-        "projectPath": "C:\\Users\\Alex\\source\\repos\\WpfAppNetCore\\WpfAppNetCore\\WpfAppNetCore.csproj",
-        "packagesPath": "C:\\Users\\Alex\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Alex\\source\\repos\\WpfAppNetCore\\WpfAppNetCore\\obj\\",
+        "projectPath": "C:\\Users\\bojc_tq19\\Desktop\\Новая папка\\ado.net\\WpfAppNetCore\\WpfAppNetCore\\WpfAppNetCore.csproj",
+        "packagesPath": "C:\\Users\\bojc_tq19\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\bojc_tq19\\Desktop\\Новая папка\\ado.net\\WpfAppNetCore\\WpfAppNetCore\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
         "configFilePaths": [
-          "C:\\Users\\Alex\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\bojc_tq19\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -40,6 +43,10 @@
         "net5.0-windows7.0": {
           "targetAlias": "net5.0-windows",
           "dependencies": {
+            "EntityFramework": {
+              "target": "Package",
+              "version": "[6.2.0, )"
+            },
             "Microsoft.EntityFrameworkCore.SqlServer": {
               "target": "Package",
               "version": "[5.0.8, )"
@@ -69,7 +76,7 @@
               "privateAssets": "none"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.301\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.302\\RuntimeIdentifierGraph.json"
         }
       }
     }

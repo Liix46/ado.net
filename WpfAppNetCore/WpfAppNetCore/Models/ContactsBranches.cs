@@ -18,5 +18,10 @@ namespace WpfAppNetCore.Models
         [MaxLength(20)]
         public string Phone { get; set; }
         public List<Branches> Branches { get; set; } = new List<Branches>();
+
+        public static int CountProp()
+        {
+            return 1;
+        }
     }
 }
