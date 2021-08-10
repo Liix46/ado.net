@@ -1,13 +1,16 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel;
 using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 using System.Linq;
+using System.Runtime.CompilerServices;
 using System.Text;
 using System.Threading.Tasks;
 
 namespace WpfAppNetCore.Models
 {
-    class Position
+    internal class Position : INotifyPropertyChanged
     {
         [Key]
         public int Id { get; set; }
@@ -17,7 +20,19 @@ namespace WpfAppNetCore.Models
         [Required]
         public int RateHour { get; set; }
 
-        public int? SpecialistsId { get; set; }
-        public virtual Specialists Specialists { get; set; }
+        //////////////////////////////////////////////
+        public List<Specialists> Specialists { get; set; } = new List<Specialists>();
+        //////////////////////////////////////////////
+        
+        public override string ToString()
+        {
+            return Id + ";" + Name + ";" + RateHour;
+        }
+
+        public event PropertyChangedEventHandler PropertyChanged;
+        public void OnPropertyChanged([CallerMemberName] string prop = "")
+        {
+            PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(prop));
+        }
     }
 }

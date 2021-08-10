@@ -1,15 +1,18 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel;
 using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 using System.Linq;
+using System.Runtime.CompilerServices;
 using System.Text;
 using System.Threading.Tasks;
 
 namespace WpfAppNetCore.Models
 {
-    class Branches
+    internal class Branches : INotifyPropertyChanged
     {
-        [Key]
+        [Key, DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         public int Id { get; set; }
         [Required]
         [MaxLength(30)]
@@ -21,15 +24,23 @@ namespace WpfAppNetCore.Models
         [MaxLength(30)]
         public string Street { get; set; }
 
-        public int? ContactsBranchesId { get; set; }
-        public virtual ContactsBranches ContactsBranches { get; set; }
+        /////////////////////////////////////
+        public List<ContactsBranches> ContactsBranches { get; set; } = new List<ContactsBranches>();
+        public List<Specialists> Specialists { get; set; } = new List<Specialists>();
+        /////////////////////////////////////
 
-        public int? SpecialistsId { get; set; }
-        public virtual Specialists Specialists { get; set; }
-
-        public static int CountProp()
+        public override string ToString()
         {
-            return 4;
+            return Id + ";" + Country + ";" + City + ";" + Street;
         }
+
+        public event PropertyChangedEventHandler PropertyChanged;
+
+        public void OnPropertyChanged([CallerMemberName] string prop = "")
+        {
+            PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(prop));
+        }
+
+        
     }
 }

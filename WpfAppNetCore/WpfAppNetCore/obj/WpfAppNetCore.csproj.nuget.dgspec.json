@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\bojc_tq19\\Desktop\\Новая папка\\ado.net\\WpfAppNetCore\\WpfAppNetCore\\WpfAppNetCore.csproj": {}
+    "C:\\Users\\bojc_tq19\\Desktop\\ado.net\\WpfAppNetCore\\WpfAppNetCore\\WpfAppNetCore.csproj": {}
   },
   "projects": {
-    "C:\\Users\\bojc_tq19\\Desktop\\Новая папка\\ado.net\\WpfAppNetCore\\WpfAppNetCore\\WpfAppNetCore.csproj": {
+    "C:\\Users\\bojc_tq19\\Desktop\\ado.net\\WpfAppNetCore\\WpfAppNetCore\\WpfAppNetCore.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\bojc_tq19\\Desktop\\Новая папка\\ado.net\\WpfAppNetCore\\WpfAppNetCore\\WpfAppNetCore.csproj",
+        "projectUniqueName": "C:\\Users\\bojc_tq19\\Desktop\\ado.net\\WpfAppNetCore\\WpfAppNetCore\\WpfAppNetCore.csproj",
         "projectName": "WpfAppNetCore",
-        "projectPath": "C:\\Users\\bojc_tq19\\Desktop\\Новая папка\\ado.net\\WpfAppNetCore\\WpfAppNetCore\\WpfAppNetCore.csproj",
+        "projectPath": "C:\\Users\\bojc_tq19\\Desktop\\ado.net\\WpfAppNetCore\\WpfAppNetCore\\WpfAppNetCore.csproj",
         "packagesPath": "C:\\Users\\bojc_tq19\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\bojc_tq19\\Desktop\\Новая папка\\ado.net\\WpfAppNetCore\\WpfAppNetCore\\obj\\",
+        "outputPath": "C:\\Users\\bojc_tq19\\Desktop\\ado.net\\WpfAppNetCore\\WpfAppNetCore\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -45,17 +45,33 @@
           "dependencies": {
             "EntityFramework": {
               "target": "Package",
-              "version": "[6.2.0, )"
+              "version": "[6.4.4, )"
+            },
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[5.0.9, )"
             },
             "Microsoft.EntityFrameworkCore.SqlServer": {
               "target": "Package",
-              "version": "[5.0.8, )"
+              "version": "[5.0.9, )"
             },
             "Microsoft.EntityFrameworkCore.Tools": {
               "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
               "suppressParent": "All",
               "target": "Package",
-              "version": "[5.0.8, )"
+              "version": "[5.0.9, )"
+            },
+            "Microsoft.Extensions.Configuration": {
+              "target": "Package",
+              "version": "[5.0.0, )"
+            },
+            "Microsoft.Extensions.Configuration.FileExtensions": {
+              "target": "Package",
+              "version": "[5.0.0, )"
+            },
+            "Microsoft.Extensions.Configuration.Json": {
+              "target": "Package",
+              "version": "[5.0.0, )"
             }
           },
           "imports": [

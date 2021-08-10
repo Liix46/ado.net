@@ -1,13 +1,16 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel;
 using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 using System.Linq;
+using System.Runtime.CompilerServices;
 using System.Text;
 using System.Threading.Tasks;
 
 namespace WpfAppNetCore.Models
 {
-    class Clients
+    internal class Clients : INotifyPropertyChanged
     {
         [Key]
         public int Id { get; set; }
@@ -21,12 +24,20 @@ namespace WpfAppNetCore.Models
         [MaxLength(20)]
         public string Phone { get; set; }
 
-        public int? GroupsId { get; set; }
-        public virtual Groups Groups { get; set; }
-
-        public static int CountProp()
+        ///////////////////////////////////////
+        public List<Groups> Groups { get; set; } = new List<Groups>();
+        ///////////////////////////////////////
+        
+        public override string ToString()
         {
-            return 3;
+            return Id + ";" + FirstName + ";" + LastName + ";" + Phone;
+        }
+
+        public event PropertyChangedEventHandler PropertyChanged;
+
+        public void OnPropertyChanged([CallerMemberName] string prop = "")
+        {
+            PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(prop));
         }
     }
 }
