@@ -6322,11 +6322,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\bojc_tq19\\Desktop\\ado.net\\WpfAppNetCore\\WpfAppNetCore\\WpfAppNetCore.csproj",
+      "projectUniqueName": "C:\\Users\\bojc_tq19\\Desktop\\Новая папка\\ado.net\\WpfAppNetCore\\WpfAppNetCore\\WpfAppNetCore.csproj",
       "projectName": "WpfAppNetCore",
-      "projectPath": "C:\\Users\\bojc_tq19\\Desktop\\ado.net\\WpfAppNetCore\\WpfAppNetCore\\WpfAppNetCore.csproj",
+      "projectPath": "C:\\Users\\bojc_tq19\\Desktop\\Новая папка\\ado.net\\WpfAppNetCore\\WpfAppNetCore\\WpfAppNetCore.csproj",
       "packagesPath": "C:\\Users\\bojc_tq19\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\bojc_tq19\\Desktop\\ado.net\\WpfAppNetCore\\WpfAppNetCore\\obj\\",
+      "outputPath": "C:\\Users\\bojc_tq19\\Desktop\\Новая папка\\ado.net\\WpfAppNetCore\\WpfAppNetCore\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

@@ -65,7 +65,7 @@ namespace WpfAppNetCore.DB
 
         public List<string> GetTables(List<string> Tables)
         {
-            using (var connection = new SqlConnection(ConnectionString))
+            using (SqlConnection connection = new SqlConnection(ConnectionString))
             {
                 // Открываем соединение
                 connection.Open();

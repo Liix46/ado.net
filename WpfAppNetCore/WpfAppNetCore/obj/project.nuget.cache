@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "7WWNtZg13ZBJViUxx5tAuqAW0hvcKTPmytzVfOD3bo42ALxJHkf4ksKXNM1sEct5/iDW/LFkjRiySInHLYvWAg==",
+  "dgSpecHash": "rb/5dCPNfHZEQW76rk1sk0RekpA6t74wehmufWtrSWC7PAfOVkPKUzwuM4QS2mYpsVjv/eTKHKgMeVX6tBdaCQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\bojc_tq19\\Desktop\\ado.net\\WpfAppNetCore\\WpfAppNetCore\\WpfAppNetCore.csproj",
+  "projectFilePath": "C:\\Users\\bojc_tq19\\Desktop\\Новая папка\\ado.net\\WpfAppNetCore\\WpfAppNetCore\\WpfAppNetCore.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\bojc_tq19\\.nuget\\packages\\entityframework\\6.4.4\\entityframework.6.4.4.nupkg.sha512",
     "C:\\Users\\bojc_tq19\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",

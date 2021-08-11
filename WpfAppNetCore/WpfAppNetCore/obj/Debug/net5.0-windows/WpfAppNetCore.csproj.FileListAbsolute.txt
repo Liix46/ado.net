@@ -180,3 +180,4 @@ C:\Users\bojc_tq19\Desktop\ado.net\WpfAppNetCore\WpfAppNetCore\obj\Debug\net5.0-
 C:\Users\bojc_tq19\Desktop\ado.net\WpfAppNetCore\WpfAppNetCore\obj\Debug\net5.0-windows\ref\WpfAppNetCore.dll
 C:\Users\bojc_tq19\Desktop\ado.net\WpfAppNetCore\WpfAppNetCore\obj\Debug\net5.0-windows\WpfAppNetCore.pdb
 C:\Users\bojc_tq19\Desktop\ado.net\WpfAppNetCore\WpfAppNetCore\obj\Debug\net5.0-windows\WpfAppNetCore.genruntimeconfig.cache
+C:\Users\bojc_tq19\Desktop\Новая папка\ado.net\WpfAppNetCore\WpfAppNetCore\obj\Debug\net5.0-windows\Views\MainWindow.g.cs
