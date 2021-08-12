@@ -63,9 +63,14 @@ namespace WpfAppNetCore.DB
             context.Workers.Load();
         }
 
+        internal void DeleteItem(string selectedTable, MainWindow mainWindow)
+        {
+            throw new NotImplementedException();
+        }
+
         public List<string> GetTables(List<string> Tables)
         {
-            using (SqlConnection connection = new SqlConnection(ConnectionString))
+            using (SqlConnection connection = new(ConnectionString))
             {
                 // Открываем соединение
                 connection.Open();
