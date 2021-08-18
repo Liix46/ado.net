@@ -14,11 +14,6 @@ using WpfAppNetCore.ViewModels;
 
 namespace WpfAppNetCore.DB
 {
-    public enum Chose
-    {
-        YES = 0,
-        NO
-    }
     internal class StepDataBase
     {
         static private StepContext context;

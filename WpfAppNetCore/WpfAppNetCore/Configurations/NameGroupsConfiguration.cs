@@ -12,8 +12,8 @@ namespace WpfAppNetCore.Configurations
              new NameGroups[]
              {
                     new NameGroups { Id = 1, Name = "KN-181-U"},
-                    new NameGroups { Id = 1, Name = "KN-191-U"},
-                    new NameGroups { Id = 1, Name = "KN-201-U"},
+                    new NameGroups { Id = 2, Name = "KN-191-U"},
+                    new NameGroups { Id = 3, Name = "KN-201-U"},
              });
         }
     }

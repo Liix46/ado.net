@@ -1,16 +1,16 @@
 ﻿using System.Collections.Generic;
 using System.ComponentModel;
-using System.Data.Entity;
+using System.Runtime.CompilerServices;
 using System.Threading.Tasks;
 using System.Windows;
-using WpfAppNetCore.DB;
 using Microsoft.EntityFrameworkCore;
-using System.Runtime.CompilerServices;
+
 using WpfAppNetCore.EventModel;
+using WpfAppNetCore.DB;
 
 namespace WpfAppNetCore.ViewModels
 {
-    class MainViewModel : INotifyPropertyChanged
+    internal class MainViewModel : INotifyPropertyChanged
     {
         private readonly StepDataBase _database = new();
         public List<string> Tables { get; set; } = new();
@@ -114,43 +114,43 @@ namespace WpfAppNetCore.ViewModels
             switch (table)
             {
                 case "Branches":
-                    _mainWindow.mainListView.ItemsSource = await StepDataBase.Context.Branches.ToListAsync();
+                    _mainWindow.mainDataGrid.ItemsSource = await StepDataBase.Context.Branches.ToListAsync();
                     break;
                 case "ContactsBranches":
-                    _mainWindow.mainListView.ItemsSource = await StepDataBase.Context.ContactsBranches.ToListAsync();
+                    _mainWindow.mainDataGrid.ItemsSource = await StepDataBase.Context.ContactsBranches.ToListAsync();
                     break;
                 case "Position":
-                    _mainWindow.mainListView.ItemsSource = await StepDataBase.Context.Positions.ToListAsync();
+                    _mainWindow.mainDataGrid.ItemsSource = await StepDataBase.Context.Positions.ToListAsync();
                     break;
                 case "Workers":
-                    _mainWindow.mainListView.ItemsSource = await StepDataBase.Context.Workers.ToListAsync();
+                    _mainWindow.mainDataGrid.ItemsSource = await StepDataBase.Context.Workers.ToListAsync();
                     break;
                 case "Specialists":
-                    _mainWindow.mainListView.ItemsSource = await StepDataBase.Context.Specialists.ToListAsync();
+                    _mainWindow.mainDataGrid.ItemsSource = await StepDataBase.Context.Specialists.ToListAsync();
                     break;
                 case "Subjects":
-                    _mainWindow.mainListView.ItemsSource = await StepDataBase.Context.Subjects.ToListAsync();
+                    _mainWindow.mainDataGrid.ItemsSource = await StepDataBase.Context.Subjects.ToListAsync();
                     break;
                 case "NameCourses":
-                    _mainWindow.mainListView.ItemsSource = await StepDataBase.Context.NameCourses.ToListAsync();
+                    _mainWindow.mainDataGrid.ItemsSource = await StepDataBase.Context.NameCourses.ToListAsync();
                     break;
                 case "Courses":
-                    _mainWindow.mainListView.ItemsSource = await StepDataBase.Context.Courses.ToListAsync();
+                    _mainWindow.mainDataGrid.ItemsSource = await StepDataBase.Context.Courses.ToListAsync();
                     break;
                 case "Clients":
-                    _mainWindow.mainListView.ItemsSource = await StepDataBase.Context.Clients.ToListAsync();
+                    _mainWindow.mainDataGrid.ItemsSource = await StepDataBase.Context.Clients.ToListAsync();
                     break;
                 case "NameGroups":
-                    _mainWindow.mainListView.ItemsSource = await StepDataBase.Context.NameGroups.ToListAsync();
+                    _mainWindow.mainDataGrid.ItemsSource = await StepDataBase.Context.NameGroups.ToListAsync();
                     break;
                 case "Groups":
-                    _mainWindow.mainListView.ItemsSource = await StepDataBase.Context.Groups.ToListAsync();
+                    _mainWindow.mainDataGrid.ItemsSource = await StepDataBase.Context.Groups.ToListAsync();
                     break;
                 case "ProgressStudy":
-                    _mainWindow.mainListView.ItemsSource = await StepDataBase.Context.ProgressStudies.ToListAsync();
+                    _mainWindow.mainDataGrid.ItemsSource = await StepDataBase.Context.ProgressStudies.ToListAsync();
                     break;
             }
-            _mainWindow.mainListView.Items.Refresh();
+            _mainWindow.mainDataGrid.Items.Refresh();
         }
 
 

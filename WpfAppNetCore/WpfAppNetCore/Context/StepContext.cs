@@ -36,7 +36,7 @@ namespace WpfAppNetCore.ViewModels
             {
                 Database.EnsureDeleted();
             }
-
+            //Database.EnsureDeleted();
             // Создаем БД
             Database.EnsureCreated();
         }
