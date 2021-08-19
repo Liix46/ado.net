@@ -10,10 +10,18 @@ using System.Threading.Tasks;
 using System.Windows;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
+using WpfAppNetCore.Models;
 using WpfAppNetCore.ViewModels;
 
 namespace WpfAppNetCore.DB
 {
+
+    public enum Choses
+    {
+        YES,
+        NO
+    }
+
     internal class StepDataBase
     {
         static private StepContext context;
@@ -57,11 +65,65 @@ namespace WpfAppNetCore.DB
             context.Subjects.Load();
             context.Workers.Load();
         }
-
-        internal void DeleteItem(string selectedTable, MainWindow mainWindow)
+        public Choses IsConfirmed()
         {
-            throw new NotImplementedException();
+            var result = MessageBox.Show("Are you sure to delete this item?", "Deleting item", MessageBoxButton.YesNo);
+
+            return (Choses)result;
         }
+
+        internal async Task DeleteItem(string selectedTable, MainWindow window)
+        {
+            if (IsConfirmed() == Choses.NO)
+                return;
+
+            int i = window.mainDataGrid.SelectedIndex;
+            string stringItem = window.mainDataGrid.Items[i].ToString();  // this give you access to the row
+            string stringId = null;
+
+            stringId = stringItem.Substring(0, stringItem.IndexOf(";"));
+
+            int id = int.Parse(stringId);
+
+            switch (selectedTable)
+            {
+                case "Branches":
+                    Branches deleteBranch = await Context.Branches.FirstOrDefaultAsync(a => a.Id == id);
+                    if (deleteBranch != null)
+                    {
+                        _ = Context.Branches.Remove(deleteBranch);
+                        _ = await context.SaveChangesAsync();
+
+                        /// refresh datagrid rows
+                        window.mainDataGrid.ItemsSource = await Context.Branches.ToListAsync();
+                    }
+                    break;
+                case "Clients":
+                    Clients deleteClient = await Context.Clients.FirstOrDefaultAsync(a => a.Id == id);
+                    if (deleteClient != null)
+                    {
+                        _ = Context.Clients.Remove(deleteClient);
+                        _ = await context.SaveChangesAsync();
+
+                        window.mainDataGrid.ItemsSource = await Context.Clients.ToListAsync();
+                    }
+                    break;
+                case "ContactsBranches":
+                    ContactsBranches deleteContactBranch = await Context.ContactsBranches.FirstOrDefaultAsync(a => a.Id == id);
+                    if (deleteContactBranch != null)
+                    {
+                        _ = Context.ContactsBranches.Remove(deleteContactBranch);
+                        _ = await context.SaveChangesAsync();
+
+                        window.mainDataGrid.ItemsSource = await Context.ContactsBranches.ToListAsync();
+                    }
+                    break;
+                default:
+                    break;
+            }
+
+        }
+
 
         public List<string> GetTables(List<string> Tables)
         {

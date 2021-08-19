@@ -195,3 +195,9 @@ C:\Users\bojc_tq19\Desktop\Новая папка\ado.net\WpfAppNetCore\WpfAppNet
 C:\Users\bojc_tq19\Desktop\Новая папка\ado.net\WpfAppNetCore\WpfAppNetCore\bin\Debug\net5.0-windows\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
 C:\Users\bojc_tq19\Desktop\Новая папка\ado.net\WpfAppNetCore\WpfAppNetCore\obj\Debug\net5.0-windows\Views\MainWindow.baml
 C:\Users\bojc_tq19\Desktop\Новая папка\ado.net\WpfAppNetCore\WpfAppNetCore\bin\Debug\net5.0-windows\appsettings.json
+C:\Users\bojc_tq19\Desktop\Новая папка\ado.net\WpfAppNetCore\WpfAppNetCore\obj\Debug\net5.0-windows\Views\BranchWindow.g.cs
+C:\Users\bojc_tq19\Desktop\Новая папка\ado.net\WpfAppNetCore\WpfAppNetCore\obj\Debug\net5.0-windows\Views\BranchWindow.baml
+C:\Users\bojc_tq19\Desktop\Новая папка\ado.net\WpfAppNetCore\WpfAppNetCore\obj\Debug\net5.0-windows\Views\ClientWindow.g.cs
+C:\Users\bojc_tq19\Desktop\Новая папка\ado.net\WpfAppNetCore\WpfAppNetCore\obj\Debug\net5.0-windows\Views\ClientWindow.baml
+C:\Users\bojc_tq19\Desktop\Новая папка\ado.net\WpfAppNetCore\WpfAppNetCore\obj\Debug\net5.0-windows\Views\ContactsBranchesWindow.g.cs
+C:\Users\bojc_tq19\Desktop\Новая папка\ado.net\WpfAppNetCore\WpfAppNetCore\obj\Debug\net5.0-windows\Views\ContactsBranchesWindow.baml

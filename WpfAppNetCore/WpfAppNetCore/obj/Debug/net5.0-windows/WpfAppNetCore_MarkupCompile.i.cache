@@ -10,11 +10,11 @@ none
 false
 TRACE;DEBUG;NET;NET5_0;NETCOREAPP
 C:\Users\bojc_tq19\Desktop\Новая папка\ado.net\WpfAppNetCore\WpfAppNetCore\App.xaml
-1-1644662438
+4-782649455
 
-331869317901
+39-1315615877
 223-677515633
-Views\MainWindow.xaml;
+Views\BranchWindow.xaml;Views\ClientWindow.xaml;Views\ContactsBranchesWindow.xaml;Views\MainWindow.xaml;
 
-False
+True
 

@@ -7,6 +7,7 @@ using Microsoft.EntityFrameworkCore;
 
 using WpfAppNetCore.EventModel;
 using WpfAppNetCore.DB;
+using WpfAppNetCore.Views;
 
 namespace WpfAppNetCore.ViewModels
 {
@@ -19,6 +20,10 @@ namespace WpfAppNetCore.ViewModels
         public MainViewModel()
         {
             Tables = _database.GetTables(Tables);
+            _ = Tables.Remove("Specialists");
+            _ = Tables.Remove("Groups");
+            _ = Tables.Remove("ProgressStudies");
+            _ = Tables.Remove("Positions");
         }
 
         private RelayCommand _addCommand;
@@ -40,7 +45,7 @@ namespace WpfAppNetCore.ViewModels
             {
                 return _deleteCommand ??= new RelayCommand(obj =>
                     {
-                        _database.DeleteItem(SelectedTable, _mainWindow);
+                        _ = _database.DeleteItem(SelectedTable, _mainWindow);
                     });
             }
         }
@@ -63,8 +68,20 @@ namespace WpfAppNetCore.ViewModels
             switch (SelectedTable)
             {
                 case "Branches":
+                    {
+                        BranchWindow _window = new();
+                        _window.Title = title;
+                        _window.Btn_Ok.Content = buttonName;
+                        _window.ShowDialog();
+                    }
                     break;
                 case "ContactsBranches":
+                    {
+                        ContactsBranchesWindow _window = new();
+                        _window.Title = title;
+                        _window.Btn_Ok.Content = buttonName;
+                        _window.ShowDialog();
+                    }
                     break;
                 case "Position":
                     break;
@@ -79,6 +96,12 @@ namespace WpfAppNetCore.ViewModels
                 case "Courses":
                     break;
                 case "Clients":
+                    {
+                        ClientWindow _window = new();
+                        _window.Title = title;
+                        _window.Btn_Ok.Content = buttonName;
+                        _window.ShowDialog();
+                    }
                     break;
                 case "NameGroups":
                     break;

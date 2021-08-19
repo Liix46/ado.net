@@ -7,6 +7,26 @@
     </ApplicationDefinition>
   </ItemGroup>
   <ItemGroup>
+    <Compile Update="Views\BranchWindow.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Views\ClientWindow.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Views\ContactsBranchesWindow.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Page Update="Views\BranchWindow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Views\ClientWindow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Views\ContactsBranchesWindow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
     <Page Update="Views\MainWindow.xaml">
       <SubType>Designer</SubType>
     </Page>
