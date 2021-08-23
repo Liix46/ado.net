@@ -1,0 +1,41 @@
+﻿<Window x:Class="WpfAppNetCore.Views.NameCoursWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfAppNetCore.Views"
+        mc:Ignorable="d"
+        Title="Name Course Edit" Height="200" Width="250" Closing="Window_Closing_1">
+    <Grid x:Name="mainGrid">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="20*"/>
+            <RowDefinition Height="55*"/>
+            <RowDefinition Height="55*"/>
+            <RowDefinition Height="55*"/>
+        </Grid.RowDefinitions>
+        <Label Content="Name Course"
+               HorizontalAlignment="Center"
+               VerticalAlignment="Center"
+               Grid.Row="1"
+               FontSize="20"
+               FontFamily="Times New Roman"
+               Target="{Binding ElementName = TBox_NameCourse}" Height="33" Width="120"
+            >
+            <Label.Effect>
+                <DropShadowEffect/>
+            </Label.Effect>
+        </Label>
+        <TextBox x:Name="TBox_NameCourse"
+                 Grid.Row="2"
+                 Grid.Column="0"
+                 Margin="5,10,5,10">
+        </TextBox>
+        <Button x:Name="Btn_Ok"
+                Content="Add"
+                HorizontalAlignment="Center"
+                VerticalAlignment="Center"
+                Width="120"
+                Height="30" FontSize="16" FontWeight="Normal" FontStyle="Normal" Grid.Row="3"
+                Command="{Binding SaveCommand}"/>
+    </Grid>
+</Window>

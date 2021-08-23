@@ -10,11 +10,11 @@ none
 false
 TRACE;DEBUG;NET;NET5_0;NETCOREAPP
 C:\Users\Bojc_tq19\source\repos\Liix46\ado.net\WpfAppNetCore\WpfAppNetCore\App.xaml
-52097230147
+7-1719819116
 
-45-1041578150
+49-639454692
 446-510519104
-Views\BranchWindow.xaml;Views\ClientWindow.xaml;Views\ContactsBranchesWindow.xaml;Views\CoursWindow.xaml;Views\MainWindow.xaml;
+Views\BranchWindow.xaml;Views\ClientWindow.xaml;Views\ContactsBranchesWindow.xaml;Views\CoursWindow.xaml;Views\MainWindow.xaml;Views\NameCoursWindow.xaml;Views\NameGroupWindow.xaml;
 
 True
 

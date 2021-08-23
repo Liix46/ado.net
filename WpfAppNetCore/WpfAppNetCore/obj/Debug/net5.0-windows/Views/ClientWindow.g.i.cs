@@ -93,7 +93,7 @@ namespace WpfAppNetCore.Views {
                 return;
             }
             _contentLoaded = true;
-            System.Uri resourceLocater = new System.Uri("/WpfAppNetCore;component/views/clientwindow.xaml", System.UriKind.Relative);
+            System.Uri resourceLocater = new System.Uri("/WpfAppNetCore;V1.0.0.0;component/views/clientwindow.xaml", System.UriKind.Relative);
             
             #line 1 "..\..\..\..\Views\ClientWindow.xaml"
             System.Windows.Application.LoadComponent(this, resourceLocater);

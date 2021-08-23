@@ -92,6 +92,12 @@ namespace WpfAppNetCore.ViewModels
                 case "Subjects":
                     break;
                 case "NameCourses":
+                    {
+                        NameCoursWindow _window = new();
+                        _window.Title = title;
+                        _window.Btn_Ok.Content = buttonName;
+                        _window.ShowDialog();
+                    }
                     break;
                 case "Courses":
                     {
@@ -110,8 +116,12 @@ namespace WpfAppNetCore.ViewModels
                     }
                     break;
                 case "NameGroups":
-                    break;
-                case "Groups":
+                    {
+                        NameGroupWindow _window = new();
+                        _window.Title = title;
+                        _window.Btn_Ok.Content = buttonName;
+                        _window.ShowDialog();
+                    }
                     break;
                 case "ProgressStudy":
                     break;

@@ -118,6 +118,36 @@ namespace WpfAppNetCore.DB
                         window.mainDataGrid.ItemsSource = await Context.ContactsBranches.ToListAsync();
                     }
                     break;
+                case "Courses":
+                    Courses deleteCourse = await Context.Courses.FirstOrDefaultAsync(a => a.Id == id);
+                    if (deleteCourse != null)
+                    {
+                        _ = Context.Courses.Remove(deleteCourse);
+                        _ = await context.SaveChangesAsync();
+
+                        window.mainDataGrid.ItemsSource = await Context.Courses.ToListAsync();
+                    }
+                    break;
+                case "NameCourses":
+                    NameCourses deleteNameCourse = await Context.NameCourses.FirstOrDefaultAsync(a => a.Id == id);
+                    if (deleteNameCourse != null)
+                    {
+                        _ = Context.NameCourses.Remove(deleteNameCourse);
+                        _ = await context.SaveChangesAsync();
+
+                        window.mainDataGrid.ItemsSource = await Context.NameCourses.ToListAsync();
+                    }
+                    break;
+                case "NameGroups":
+                    NameGroups deleteNameGroup = await Context.NameGroups.FirstOrDefaultAsync(a => a.Id == id);
+                    if (deleteNameGroup != null)
+                    {
+                        _ = Context.NameGroups.Remove(deleteNameGroup);
+                        _ = await context.SaveChangesAsync();
+
+                        window.mainDataGrid.ItemsSource = await Context.NameGroups.ToListAsync();
+                    }
+                    break;
                 default:
                     break;
             }

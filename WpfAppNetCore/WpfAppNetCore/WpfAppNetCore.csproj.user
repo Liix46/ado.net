@@ -19,6 +19,12 @@
     <Compile Update="Views\CoursWindow.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Update="Views\NameCoursWindow.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Views\NameGroupWindow.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <Page Update="Views\BranchWindow.xaml">
@@ -34,6 +40,12 @@
       <SubType>Designer</SubType>
     </Page>
     <Page Update="Views\MainWindow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Views\NameCoursWindow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Views\NameGroupWindow.xaml">
       <SubType>Designer</SubType>
     </Page>
   </ItemGroup>

@@ -93,7 +93,7 @@ namespace WpfAppNetCore.Views {
                 return;
             }
             _contentLoaded = true;
-            System.Uri resourceLocater = new System.Uri("/WpfAppNetCore_2oj0dbuf_wpftmp;component/views/branchwindow.xaml", System.UriKind.Relative);
+            System.Uri resourceLocater = new System.Uri("/WpfAppNetCore;component/views/branchwindow.xaml", System.UriKind.Relative);
             
             #line 1 "..\..\..\..\Views\BranchWindow.xaml"
             System.Windows.Application.LoadComponent(this, resourceLocater);

@@ -284,3 +284,5 @@ C:\Users\Bojc_tq19\Source\Repos\Liix46\ado.net\WpfAppNetCore\WpfAppNetCore\obj\D
 C:\Users\Bojc_tq19\Source\Repos\Liix46\ado.net\WpfAppNetCore\WpfAppNetCore\obj\Debug\net5.0-windows\Views\CoursWindow.baml
 C:\Users\Bojc_tq19\Source\Repos\Liix46\ado.net\WpfAppNetCore\WpfAppNetCore\obj\Debug\net5.0-windows\Views\MainWindow.baml
 C:\Users\Bojc_tq19\Source\Repos\Liix46\ado.net\WpfAppNetCore\WpfAppNetCore\obj\Debug\net5.0-windows\WpfAppNetCore.g.resources
+C:\Users\Bojc_tq19\Source\Repos\Liix46\ado.net\WpfAppNetCore\WpfAppNetCore\obj\Debug\net5.0-windows\Views\NameCoursWindow.g.cs
+C:\Users\Bojc_tq19\Source\Repos\Liix46\ado.net\WpfAppNetCore\WpfAppNetCore\obj\Debug\net5.0-windows\Views\NameCoursWindow.baml
