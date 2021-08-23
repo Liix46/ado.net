@@ -16,6 +16,9 @@
     <Compile Update="Views\ContactsBranchesWindow.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Update="Views\CoursWindow.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <Page Update="Views\BranchWindow.xaml">
@@ -25,6 +28,9 @@
       <SubType>Designer</SubType>
     </Page>
     <Page Update="Views\ContactsBranchesWindow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Views\CoursWindow.xaml">
       <SubType>Designer</SubType>
     </Page>
     <Page Update="Views\MainWindow.xaml">

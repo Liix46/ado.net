@@ -94,6 +94,12 @@ namespace WpfAppNetCore.ViewModels
                 case "NameCourses":
                     break;
                 case "Courses":
+                    {
+                        CoursWindow _window = new();
+                        _window.Title = title;
+                        _window.Btn_Ok.Content = buttonName;
+                        _window.ShowDialog();
+                    }
                     break;
                 case "Clients":
                     {

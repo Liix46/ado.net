@@ -12,7 +12,7 @@ namespace WpfAppNetCore.Models
 {
     internal class ContactsBranches : INotifyPropertyChanged
     {
-        [Key]
+        [Key, DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         public int Id { get; set; }
         [Required]
         [MaxLength(40)]

@@ -10,6 +10,7 @@
         "dependencies": {
           "EntityFramework": "6.4.4",
           "Microsoft.EntityFrameworkCore": "5.0.9",
+          "Microsoft.EntityFrameworkCore.Analyzers": "5.0.9",
           "Microsoft.EntityFrameworkCore.SqlServer": "5.0.9",
           "Microsoft.EntityFrameworkCore.Tools": "5.0.9",
           "Microsoft.Extensions.Configuration": "5.0.0",
