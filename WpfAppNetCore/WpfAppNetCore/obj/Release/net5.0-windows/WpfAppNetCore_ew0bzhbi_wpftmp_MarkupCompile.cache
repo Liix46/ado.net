@@ -1,19 +1,19 @@
-﻿WpfAppNetCore
-1.0.0.0
+﻿WpfAppNetCore_ew0bzhbi_wpftmp
+
 
 winexe
 C#
 .cs
-C:\Users\student\source\repos\Liix46\ado.net\WpfAppNetCore\WpfAppNetCore\obj\Debug\net5.0-windows\
-WpfAppNetCore
+C:\Users\student\source\repos\Liix46\ado.net\WpfAppNetCore\WpfAppNetCore\obj\Release\net5.0-windows\
+WpfAppNetCore_ew0bzhbi_wpftmp
 none
 false
-TRACE;DEBUG;NET;NET5_0;NETCOREAPP
+TRACE;RELEASE;NET;NET5_0;NETCOREAPP
 C:\Users\student\source\repos\Liix46\ado.net\WpfAppNetCore\WpfAppNetCore\App.xaml
 71879751510
 
-45-409383642
-223-1221214719
+511401175737
+4461852537858
 Views\BranchWindow.xaml;Views\ClientWindow.xaml;Views\ContactsBranchesWindow.xaml;Views\CoursWindow.xaml;Views\MainWindow.xaml;Views\NameCoursWindow.xaml;Views\NameGroupWindow.xaml;
 
 True

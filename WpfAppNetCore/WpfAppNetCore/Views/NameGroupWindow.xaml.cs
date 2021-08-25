@@ -13,19 +13,15 @@ using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
 using WpfAppNetCore.DB;
 using WpfAppNetCore.ViewModels;
-;
 
 namespace WpfAppNetCore.Views
 {
-    /// <summary>
-    /// Interaction logic for NameGroupWindow.xaml
-    /// </summary>
     public partial class NameGroupWindow : Window
     {
         public NameGroupWindow()
         {
             InitializeComponent();
-            DataContext = new NameCoursesViewModel(this);
+            DataContext = new NameGroupsViewModel(this);
         }
 
         private async void Window_Closing(object sender, System.ComponentModel.CancelEventArgs e)
